@@ -1,0 +1,44 @@
+@import '../../sass/utils/_variables.scss';
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;  
+  border-radius: 5px; 
+
+  &__toggle {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: $color-secondary-red;
+    color: $color-primary-white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+
+    h2 {
+      font-weight: 700;
+      font-size: clamp(13px, 1.8vw, 18px);
+    }
+
+    &__arrowDown {
+      width: clamp(16px, 1.8vw, 24px);
+      transform: rotate(180deg);
+      transition: transform 0.3s ease;
+    }
+
+    &__arrowUp {
+      width: clamp(16px, 1.8vw, 24px);
+      transform: rotate(deg);
+      transition: transform 0.3s ease;
+    }
+  }
+
+  &__content {
+    background-color: $color-tertiary-grey;
+    font-size: clamp(13px, 1.8vw, 18px);
+    color: black;
+    padding: 20px 10px;
+  }
+}

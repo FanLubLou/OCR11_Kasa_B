@@ -1,0 +1,17 @@
+@import '../../sass/utils/_variables.scss';
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;    
+    &_tag{
+        display: inline;
+        padding: 5px 15px;
+        margin-right: 10px;
+        border-radius: 10px;
+        border: none;
+        color: $color-primary-white;
+        background-color: $color-secondary-red;
+        font-size: clamp(10px, 1.4vw, 14px);
+    }
+}

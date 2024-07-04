@@ -1,0 +1,10 @@
+@import '../../sass/main.scss';
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    gap: 40px;  
+}

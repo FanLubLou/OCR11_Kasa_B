@@ -1,0 +1,86 @@
+@import '../../sass/utils/_variables.scss';
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 30px;
+    &_ContHostAndHousing{
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 700px){
+            flex-direction: column;
+        }    
+        &_ContHousing{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            &_Text{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                &_Title{
+                    margin:0;
+                    font-size: clamp(18px, 2vw + 2vh + 0.5vmin, 36px);
+                    line-height: 150%;
+                    font-weight: 500;
+                    color: $color-secondary-red;
+                }
+                &_Location{
+                    margin:0;
+                    font-size: 0.875rem;
+                    line-height: 1.25rem;
+                } 
+            }
+            &_Tags{
+                margin-top: 20px;
+                
+            }
+        }
+        &_ContHost{   
+            display: flex;
+            flex-direction: column;
+            @media screen and (max-width: 700px){
+                justify-content: space-between;
+                flex-direction: row-reverse;
+                margin-top: 10px;
+            }         
+            &_Info{
+                display: flex;
+                justify-content: flex-end;
+                align-items: flex-start;
+                gap: 0 10px;
+                font-weight: 500;
+                font-size: clamp(12px, 1.6vw, 18px);
+                &_displayName{
+                    color: $color-secondary-red;
+                    display: flex;
+                    flex-direction: column;     
+                }
+                & > img{
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 32px;
+                }                
+            }
+            &_Rating{
+               margin-top: 20px;
+                             
+            }
+           
+
+        }
+    }
+    &_ContCollapse{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 100px;
+        @media screen and (max-width: 700px){
+        flex-direction: column;
+        gap: 20px;
+        }
+      }
+
+    }

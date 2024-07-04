@@ -1,0 +1,17 @@
+@import '../../sass/main.scss';
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  
+  &_main{
+    width: 85%;
+    margin: 0 auto;
+    &>section{
+      margin: 25px 0;
+      @media screen and (max-width: 700px) {
+        margin: 15px auto;
+    }
+  }
+}
+}

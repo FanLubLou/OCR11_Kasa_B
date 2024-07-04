@@ -1,0 +1,8 @@
+.star{
+    width: clamp(14px, 1.5vw, 25px); 
+    margin-right: clamp(2px, 1vw, 18px);
+  }  
+  
+  .star:last-child {
+    margin-right: 0;
+  }

@@ -1,0 +1,18 @@
+@import '../../sass/utils/_variables.scss';
+.wrapper{
+    display: flex;
+    gap: 55px;
+    color: $color-quaternary-black;
+    font-size: clamp(12px, 2.5vw, 24px);
+    @media screen and (max-width: 700px){
+        gap: 25px;
+    }
+    &_elt{
+        &_active{
+            position: relative;
+            text-decoration: underline solid $color-quaternary-black; 
+            
+        }
+    }
+}
+ 
