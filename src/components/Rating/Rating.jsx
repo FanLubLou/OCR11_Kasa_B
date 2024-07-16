@@ -7,10 +7,9 @@ export default function Rating({ rating }) {
     return (
         <div>
             {[...Array(5)].map((_, index) => {
-                const ratingValue = index + 1;
+                const starPosition = index + 1;
                 return (
-                    <img className={styles.star} key={index} src={ratingValue <= rating ? RedStar : GreyStar} alt="Etoile" />
-                       
+                    <img className={styles.star} key={index} src={starPosition <= rating ? RedStar : GreyStar} alt="Etoile" />                       
                 )
             })}
         </div>
