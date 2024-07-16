@@ -15,13 +15,9 @@ export default function Collapse ({ title, content }) {
           alt={toggle ? "flèche vers le bas" : "flèche vers le haut"} 
         />
       </div>
-      {toggle && (
+      {toggle && content && (
         <div className={styles.wrapper__content}>
-          {Array.isArray(content) ? (
-            content.map((item, index) => <p key={index}>{item}</p>)
-          ) : (
-            <p>{content}</p>
-          )}
+          <p>{content}</p>
         </div>
       )}
     </div>
